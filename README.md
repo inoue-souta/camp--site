@@ -1,24 +1,38 @@
-# README
+## usersテーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column                 | Type   | Options      |
+| ---------------------- | ------ | ------------ |
+| name                   | string | null: false  |
+| email                  | string | unique: true |
+| encrypted_password     | string | null: false  |
+| style                  | string | null: false  |
+| text                   | text   | null: false  |
 
-Things you may want to cover:
+### Association
+- has_many :camps
+- has_many :comments
 
-* Ruby version
+## campsテーブル
 
-* System dependencies
+| Column         | Type    | Options                       |
+| -------------- | ------- | ----------------------------- |
+| title          | string  | null: false                   |
+| text           | text    | null: false                   |
+| category       | string  | null: false                   |
+| user_id        | integer | null: false foreign_key: true |
 
-* Configuration
+### Association
+- belongs_to :user
+- has_many :comments
 
-* Database creation
+## commentsテーブル
 
-* Database initialization
+| Column      | Type    | Options                       |
+| ----------- | ------- | ----------------------------- |
+| camp_id     | integer | null: false foreign_key: true |
+| user_id     | integer | null: false foreign_key: true |
+| text        | text    | null: false                   |
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :user
+- belongs_to :camp
