@@ -7,7 +7,8 @@
   padding: 2vh 15vw;
   display: flex;
   flex-direction: column;
-  background-color: darkgreen;
+  /* background-color: darkgreen; */
+  background-image: url("banner-1557834_1920.jpg");
 }
 
 .search-bar-contents {
@@ -38,7 +39,7 @@
   width: 10vh;
   border: 0;
   cursor: pointer;
-  background-color: #3ccace;
+  background-color: green;
   padding: 8px;
 }
 
@@ -89,17 +90,16 @@
 
 .logout {
   text-decoration: none;
-  color: #333333;
+  color: white;
 }
 
 .login {
   text-decoration: none;
-  line-height: 32px;
   margin-right: 3vw;
-  color: #ffffff;
+  color: white;
 }
 
 .sign-up {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
 }
