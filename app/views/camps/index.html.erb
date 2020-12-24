@@ -1,0 +1,12 @@
+<%= render "shared/header" %>
+<div class="contents row">
+  <% @camps.each do |camp| %>
+    <div class="content_post" style="background-image: url(<%= camp.image %>);">
+      <p><%= camp.text %></p>
+      <span class="name">
+        <%= camp.title %>
+        <%= camp.category %>
+      </span>
+    </div>
+  <% end %>
+</div>
