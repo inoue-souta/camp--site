@@ -19,6 +19,10 @@ class CampsController < ApplicationController
     end
   end
 
+  def show
+    @camp = Camp.find(params[:id])
+  end
+
   private
 
   def camp_params
