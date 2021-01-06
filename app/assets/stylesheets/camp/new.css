@@ -1,0 +1,46 @@
+.camp-image {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background-image: url("images.jpg");
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  z-index: 0;
+}
+
+.title-1 {
+  font-size: 30px;
+  margin-left: 16vw;
+  margin-top: 60px;
+  color: goldenrod;
+}
+
+.new-camp {
+  position: absolute;
+  height: 10vh;
+  z-index: 1;
+}
+.img-upload {
+  font-size: 16px;
+  height: 50px;
+  margin-top: 60px;
+  margin-left: 46vw;
+}
+.form {
+  font-size: 50px;
+  margin-left: 25vw;
+}
+
+.input-text {
+  background-color: teal;
+  border: 1px solid black;
+}
+
+.submit-btn {
+  margin-left: 49vw;
+  font-size: 20px;
+}
