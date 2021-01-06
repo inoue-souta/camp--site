@@ -1,0 +1,17 @@
+<div class="camp-image"></div>
+<div class="new-camp">
+    <h3 class="title-1">キャンプの知識やオススメの道具を投稿して共有しよう！</h3>
+    <%= form_with model: @camp, url:camps_path, local: true do |form| %>
+    <%= render 'shared/error_messages', model: form.object %>
+    <div class="img-upload">
+        <%= form.file_field :image %>
+    </div>
+    <div class="form">
+      <%= form.text_field :title, class:"input-text", placeholder: "タイトル" %>
+      <%= form.text_field :category, class:"input-text", placeholder: "カテゴリー" %>
+      <%= form.text_area :text, class:"input-text", placeholder: "概要欄" %>
+    </div>
+    <div class="submit-btn">
+      <%= form.submit "投稿" %>
+    <% end %>
+</div>

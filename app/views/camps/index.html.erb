@@ -1,12 +1,23 @@
 <%= render "shared/header" %>
-<div class="contents row">
-  <% @camps.each do |camp| %>
-    <div class="content_post" style="background-image: url(<%= camp.image %>);">
-      <p><%= camp.text %></p>
-      <span class="name">
-        <%= camp.title %>
-        <%= camp.category %>
-      </span>
-    </div>
-  <% end %>
-</div>
+<div class="camp-back"></div>
+  <div class='item-contents'>
+    <%= link_to 'キャンプ 投稿一覧', "#", class: "subtitle" %>
+    <ul class='item-lists'>
+
+    <% @camps.each do |item| %>
+      <li class='list'>
+        <div class='item-img-content'>
+          <%= image_tag item.image, class: "item-img" %>
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= item.title %>
+          </h3>
+          <div class='item-price'>
+            <span><%= item.category %></span>
+          </div>
+        </div>
+      </li>
+    <% end %>
+    </ul>
+  </div>
