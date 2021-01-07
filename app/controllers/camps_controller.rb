@@ -23,6 +23,19 @@ class CampsController < ApplicationController
     @camp = Camp.find(params[:id])
   end
 
+  def edit
+    @camp = Camp.find(params[:id])
+  end
+
+  def update
+    @camp = Camp.find(params[:id])
+    if @camp.update(camp_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
   private
 
   def camp_params
