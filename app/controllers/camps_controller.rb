@@ -1,5 +1,5 @@
 class CampsController < ApplicationController
-  before_action :move_to_index, except: :index
+  before_action :move_to_index, except: [:index, :show]
 
 
   def index
@@ -17,6 +17,10 @@ class CampsController < ApplicationController
     else 
       render :new
     end
+  end
+
+  def show
+    @camp = Camp.find(params[:id])
   end
 
   private
