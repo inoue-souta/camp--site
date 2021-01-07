@@ -19,6 +19,13 @@
   color: goldenrod;
 }
 
+.title-2 {
+  font-size: 30px;
+  margin-left: 45vw;
+  margin-top: 60px;
+  color: black;
+}
+
 .new-camp {
   position: absolute;
   height: 10vh;

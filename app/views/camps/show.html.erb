@@ -1,21 +1,14 @@
 <div class="camp-image"></div>
-<div class="show">
+
+  <div class="show">
       <% if user_signed_in? %>
       <% if current_user.id == @camp.user_id %>
-        <%= link_to '編集', "#", method: :get, class: "show-edit" %>
-        <%= link_to '削除', "#", method: :delete, class:'show-destoroy' %>
+        <%= link_to '編集', edit_camp_path(@camp.id), class: "show-edit" %>
+        <%= link_to '削除', "#", method: :delete, class:'show-destroy' %>
       <% end %>
     <% end %>
-    <div class="comment-box">
-    <p>コメント欄</p>
-      <form>
-        <textarea class="comment-text">例）こんにちは</textarea>
-        <button type="submit" class="comment-btn">
-          <span>コメントを送信する<span>
-        </button>
-      </form>
-    </div>
-</div>
+  </div>
+
 <div class="camp-show">
   <%= image_tag @camp.image ,class:"item-box-img" %>
     <div class="name">
@@ -33,3 +26,13 @@
       </div>
     </div>
 </div>
+
+  <div class="comment-box">
+    <p>コメント欄</p>
+      <form>
+        <textarea class="comment-text">例）こんにちは</textarea>
+        <button type="submit" class="comment-btn">
+          <span>コメントを送信する<span>
+        </button>
+      </form>
+  </div>
