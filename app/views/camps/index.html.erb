@@ -4,19 +4,21 @@
     <%= link_to 'キャンプ 投稿一覧', "#", class: "subtitle" %>
     <ul class='item-lists'>
 
-    <% @camps.each do |item| %>
+    <% @camps.each do |camp| %>
       <li class='list'>
+        <%= link_to camp_path(camp.id) do %>
         <div class='item-img-content'>
-          <%= image_tag item.image, class: "item-img" %>
+          <%= image_tag camp.image, class: "item-img" %>
         </div>
         <div class='item-info'>
           <h3 class='item-name'>
-            <%= item.title %>
+            <%= camp.title %>
           </h3>
           <div class='item-price'>
-            <span><%= item.category %></span>
+            <span><%= camp.category %></span>
           </div>
         </div>
+        <% end %>
       </li>
     <% end %>
     </ul>
