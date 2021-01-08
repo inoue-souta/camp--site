@@ -4,7 +4,7 @@
       <% if user_signed_in? %>
       <% if current_user.id == @camp.user_id %>
         <%= link_to '編集', edit_camp_path(@camp.id), class: "show-edit" %>
-        <%= link_to '削除', "#", method: :delete, class:'show-destroy' %>
+        <%= link_to '削除', camp_path(@camp.id), method: :delete, class:'show-destroy' %>
       <% end %>
     <% end %>
   </div>
