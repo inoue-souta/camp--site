@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   
   resources :camps
   resources :explanations, only: :show
+  resources :users, only: :show
 end
