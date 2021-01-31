@@ -92,6 +92,7 @@
   border: solid 2px green;
   color: black;
   background-color: palevioletred;
+  margin-right: 20px;
 }
 
 .login {
@@ -107,6 +108,7 @@
   border: solid 2px green;
   color: black;
   background-color: royalblue;
+  margin-right: 20px;
 }
 
 .post-btn {
