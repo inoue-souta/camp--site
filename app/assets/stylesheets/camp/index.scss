@@ -22,6 +22,7 @@
 }
 
 .item-contents > .subtitle {
+  width: 15vw;
   font-size: 3vh;
   margin: 1vh 0;
   position: fixed;
@@ -32,6 +33,76 @@
   font-weight: bold;
   border: solid 2px green;
   background-color: greenyellow;
+}
+
+.item-contents > .subtitle1 {
+  width: 15vw;
+  font-size: 3vh;
+  margin: 1vh 0;
+  position: fixed;
+  top: 30vh;
+  right: 1vw;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: solid 2px green;
+  background-color: gainsboro;
+}
+
+.item-contents > .subtitle2 {
+  width: 15vw;
+  font-size: 3vh;
+  margin: 1vh 0;
+  position: fixed;
+  top: 40vh;
+  right: 1vw;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: solid 2px green;
+  background-color: palevioletred;
+}
+
+.item-contents > .subtitle3 {
+  width: 15vw;
+  font-size: 3vh;
+  margin: 1vh 0;
+  position: fixed;
+  top: 40vh;
+  right: 1vw;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: solid 2px green;
+  background-color: royalblue;
+}
+
+.item-contents > .subtitle4 {
+  width: 15vw;
+  font-size: 3vh;
+  margin: 1vh 0;
+  position: fixed;
+  top: 50vh;
+  right: 1vw;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: solid 2px green;
+  background-color: royalblue;
+}
+
+.item-contents > .subtitle5 {
+  width: 15vw;
+  font-size: 3vh;
+  margin: 1vh 0;
+  position: fixed;
+  top: 50vh;
+  right: 1vw;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: solid 2px green;
+  background-color: royalblue;
 }
 
 .item-lists {
