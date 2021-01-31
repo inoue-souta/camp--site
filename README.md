@@ -15,15 +15,15 @@
 
 ## DEMO
 
-![トップ画面](top.jpg)
+![トップ画面](./images/top.jpg)
 
-![投稿一覧画面](top1.jpg)
+![投稿一覧画面](./images/top1.jpg)
 
-![ログイン画面](login.jpg)
+![ログイン画面](./images/login.jpg)
 
-![新規登録画面](signin.jpg)
+![新規登録画面](./images/signin.jpg)
 
-![新規投稿画面](new.jpg)
+![新規投稿画面](./images/new.jpg)
 
 ## 実装予定の内容
 
