@@ -1,6 +1,7 @@
 <div class="camp-image"></div>
 
   <div class="show">
+    <%= link_to @camp.user.name, "#", class: "user-name" %>
       <% if user_signed_in? %>
       <% if current_user.id == @camp.user_id %>
         <%= link_to '編集', edit_camp_path(@camp.id), class: "show-edit" %>

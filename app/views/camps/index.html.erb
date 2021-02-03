@@ -1,15 +1,16 @@
 <%= render "shared/header" %>
 <div class="camp-back"></div>
-  <div class='item-contents'>
+<div class='item-contents'>
     <%= link_to 'キャンプ 投稿一覧', "#", class: "subtitle" %>
     <%= link_to '投稿画面へ移動', new_camp_path, class: "subtitle1" %>
   <% if user_signed_in? %>
     <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "subtitle2" %>
-    <%= link_to current_user.name, user_path((current_user)), class: "subtitle5" %>
+    <%= link_to current_user.name, user_path(current_user), class: "subtitle5" %>
   <% else %>
     <%= link_to 'ログイン', new_user_session_path, class: "subtitle3" %>
     <%= link_to '新規登録', new_user_registration_path, class: "subtitle4" %>
   <% end %>
+  
     <ul class='item-lists'>
 
     <% @camps.each do |camp| %>
@@ -30,4 +31,4 @@
       </li>
     <% end %>
     </ul>
-  </div>
+</div>
