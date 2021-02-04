@@ -22,6 +22,8 @@
 }
 
 .item-contents > .subtitle {
+  position: absolute;
+  z-index: 1;
   width: 15vw;
   font-size: 3vh;
   margin: 1vh 0;
@@ -36,6 +38,8 @@
 }
 
 .item-contents > .subtitle1 {
+  position: absolute;
+  z-index: 1;
   width: 15vw;
   font-size: 3vh;
   margin: 1vh 0;
@@ -50,6 +54,8 @@
 }
 
 .item-contents > .subtitle2 {
+  position: absolute;
+  z-index: 1;
   width: 15vw;
   font-size: 3vh;
   margin: 1vh 0;
@@ -64,6 +70,8 @@
 }
 
 .item-contents > .subtitle3 {
+  position: absolute;
+  z-index: 1;
   width: 15vw;
   font-size: 3vh;
   margin: 1vh 0;
@@ -78,6 +86,8 @@
 }
 
 .item-contents > .subtitle4 {
+  position: absolute;
+  z-index: 1;
   width: 15vw;
   font-size: 3vh;
   margin: 1vh 0;
@@ -92,6 +102,8 @@
 }
 
 .item-contents > .subtitle5 {
+  position: absolute;
+  z-index: 1;
   width: 15vw;
   font-size: 3vh;
   margin: 1vh 0;
@@ -106,15 +118,18 @@
 }
 
 .item-lists {
-  width: 80vw;
+  // width: 60vw;
+  // width: 900px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.item-lists > .list {
-  width: 37vh;
-  padding: 1vw;
+.list {
+  margin-top: 10px;
+  width: 70vh;
+  // padding: 1.2vw;
+  display: flex;
 }
 
 .item-img-content {
@@ -126,23 +141,10 @@
   height: 33vh;
 }
 
-.sold-out {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  background-color: crimson;
-  transform: skewY(-10deg);
-}
-
-.sold-out > span {
-  color: #fff;
-  font-size: 45px;
-  font: bold;
-}
-
 .item-info {
-  background-color: #fff;
+  width: 20vw;
+  height: 10vh;
+  background-color: grey;
   color: black;
   padding: 1vw;
 }
@@ -151,23 +153,23 @@
   font-size: 2.5vh;
 }
 
-.item-price {
-  font-size: 1.5vh;
-  display: flex;
-  justify-content: space-between;
-}
+// .item-category {
+//   font-size: 1.5vh;
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.star-btn {
-  display: flex;
-  align-items: center;
-}
+// .star-btn {
+//   display: flex;
+//   align-items: center;
+// }
 
-.star-icon {
-  height: 2vh;
-  width: 2vh;
-  margin-right: 0.5vw;
-}
+// .star-icon {
+//   height: 2vh;
+//   width: 2vh;
+//   margin-right: 0.5vw;
+// }
 
-.star-count {
-  font-size: 2vh;
-}
+// .star-count {
+//   font-size: 2vh;
+// }
