@@ -14,7 +14,7 @@
 
 .title-1 {
   font-size: 30px;
-  margin-left: 16vw;
+  margin-left: 20vw;
   margin-top: 60px;
   color: goldenrod;
 }
@@ -39,15 +39,16 @@
 }
 .form {
   font-size: 50px;
-  margin-left: 25vw;
+  margin-left: 35vw;
 }
 
 .input-text {
   background-color: teal;
   border: 1px solid black;
+  margin-top: 20px;
 }
 
 .submit-btn {
-  margin-left: 49vw;
+  margin-left: 54vw;
   font-size: 20px;
 }
