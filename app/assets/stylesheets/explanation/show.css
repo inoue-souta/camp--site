@@ -1,6 +1,9 @@
 .top1 {
   color: black;
   font-size: 50px;
+  border: solid 2px black;
+  margin-top: 10px;
+  background-color: gray;
 }
 
 .camp1-image {
@@ -8,4 +11,34 @@
   margin-left: 5vw;
   width: 50vw;
   border: solid 2px green;
+}
+
+.top2 {
+  border: solid 2px black;
+  color: black;
+  font-size: 50px;
+  margin-top: 10px;
+  background-color: royalblue;
+}
+
+.top3 {
+  color: black;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-left: 5vw;
+}
+
+.top4 {
+  border: solid 2px black;
+  color: black;
+  font-size: 50px;
+  margin-top: 10px;
+  background-color: palevioletred;
+}
+
+.top5 {
+  color: black;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-left: 5vw;
 }
