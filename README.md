@@ -35,8 +35,8 @@
 ![アプリの使い方画面](./campsite4.png)
 
 # オススメ道具画面
-![オススメ道具画面](./campsite5.png)
-![オススメ道具画面](./campsite4.png)
+![オススメ道具画面](./campsite6.png)
+![オススメ道具画面](./campsite7.png)
 
 ## 実装予定の内容
 
