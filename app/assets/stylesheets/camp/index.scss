@@ -14,6 +14,7 @@
 // }
 
 .item-contents {
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,8 +119,6 @@
 }
 
 .item-lists {
-  // width: 60vw;
-  // width: 900px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -153,24 +152,3 @@
 .item-name {
   font-size: 2.5vh;
 }
-
-// .item-category {
-//   font-size: 1.5vh;
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .star-btn {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .star-icon {
-//   height: 2vh;
-//   width: 2vh;
-//   margin-right: 0.5vw;
-// }
-
-// .star-count {
-//   font-size: 2vh;
-// }
