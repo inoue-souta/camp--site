@@ -118,3 +118,22 @@
   border: solid 2px green;
   background-color: white;
 }
+
+.mk-top {
+  width: 50vw;
+  height: 50vh;
+  margin-left: 20vw;
+  margin-top: 10px;
+}
+
+.mk-title {
+  margin-top: 10vh;
+  font-size: 40px;
+  margin-left: 40vh;
+}
+
+.mk-name {
+  font-size: 20px;
+  margin-left: 40vh;
+  color: red;
+}

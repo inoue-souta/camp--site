@@ -11,24 +11,25 @@
     <%= link_to '新規登録', new_user_registration_path, class: "subtitle4" %>
   <% end %>
   
-    <ul class='item-lists'>
+    <div class='item-lists'>
 
     <% @camps.each do |camp| %>
-      <li class='list'>
-        <%= link_to camp_path(camp.id) do %>
-        <div class='item-img-content'>
-          <%= image_tag camp.image, class: "item-img" %>
-        </div>
+      <div class='list'>
         <div class='item-info'>
           <h3 class='item-name'>
             <%= camp.title %>
           </h3>
-          <div class='item-price'>
+          <div class='item-category'>
             <span><%= camp.category %></span>
           </div>
         </div>
+        <%= link_to camp_path(camp.id) do %>
+        <div class='item-img-content'>
+          <%= image_tag camp.image, class: "item-img" %>
+        </div>
+        
         <% end %>
-      </li>
+      </div>
     <% end %>
-    </ul>
+    </div>
 </div>
