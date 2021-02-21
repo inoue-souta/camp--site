@@ -22,7 +22,7 @@
 ![投稿一覧画面](./campsite2.jpg)
 
 # 投稿詳細画面
-![投稿詳細画面](./campsite.jpg)
+![投稿詳細画面](./campsite8.jpg)
 
 # ログイン画面
 ![ログイン画面](./login.jpg)
