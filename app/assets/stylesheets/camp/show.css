@@ -24,6 +24,7 @@
   margin-top: 10px;
   height: 25vh;
   background-color: white;
+  overflow: scroll;
 }
 
 .show-category {
