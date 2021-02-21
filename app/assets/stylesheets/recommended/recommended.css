@@ -1,0 +1,38 @@
+.recommended {
+  background-color: gray;
+  text-align: center;
+}
+
+.recommended-title {
+  color: red;
+  font-size: 50px;
+  padding-top: 20px;
+}
+
+.recommended-mk {
+  width: 50vw;
+}
+
+.recommended-title2 {
+  margin-top: 10px;
+  font-size: 30px;
+  color: cadetblue;
+  background-color: azure;
+}
+
+.recommended-top {
+  font-size: 22px;
+}
+
+.recommended-top2 {
+  color: red;
+  font-size: 15px;
+  margin-top: 20px;
+  background-color: seashell;
+}
+
+.recommended-top3 {
+  margin-top: 20px;
+  padding-bottom: 50px;
+  font-size: 18px;
+}
