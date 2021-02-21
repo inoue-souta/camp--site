@@ -50,6 +50,22 @@
 - 削除ボタンを誤って押して投稿が消されないようにHTML,CSSを用いてポップアップを表示するようにしました。
 ![削除ボタンのポップアップ](./campsite9.jpg)
 
+## 使用技術(開発環境)
+###バックエンド
+- Ruby, Ruby on Rails
+
+### フロントエンド
+- HTML,CSS
+
+### データベース
+- MySQL
+
+### ソース管理
+- GitHub, GitHubDesktop
+
+### エディタ
+- VSCode
+
 ## 今後実装したい機能
 
 - 検索機能
@@ -63,8 +79,6 @@
 | name               | string | null: false  |
 | email              | string | unique: true |
 | encrypted_password | string | null: false  |
-| style              | string | null: false  |
-| text               | text   | null: false  |
 
 ### Association
 
