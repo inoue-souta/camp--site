@@ -52,16 +52,30 @@
 }
 
 .show-edit {
-  color: white;
-  margin-right: 50px;
-  border: solid 2px black;
-  background-color: blue;
+  display: block;
+  background-color: #01b6ed;
+  color: #fff;
+  width: 200px;
+  line-height: 40px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .show-destroy {
   color: white;
   border: solid 2px black;
   background-color: red;
+  text-decoration: none;
+}
+
+.show-can {
+  color: white;
+  background-color: #01b6ed;
+  border: solid 2px black;
+  text-decoration: none;
+  margin-left: 30px;
 }
 
 .show {
@@ -87,4 +101,46 @@
 
 .comment-btn {
   background-color: chartreuse;
+}
+
+/*popup表示させたいコンテンツのレイアウトと位置*/
+#popup {
+  width: 30%;
+  line-height: 100px;
+  background: #000;
+  padding: 0 4%;
+  box-sizing: border-box;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+label {
+  display: block;
+}
+/*ボタンの装飾*/
+label span {
+  display: block;
+  background-color: red;
+  color: #fff;
+  width: 200px;
+  line-height: 40px;
+  border-radius: 4px;
+  text-align: center;
+}
+label span:hover {
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  display: none;
+}
+/*checkboxがcheckの状態になったらpopupを表示させる*/
+input[type="checkbox"]:checked + #popup {
+  display: block;
 }

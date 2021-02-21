@@ -5,7 +5,14 @@
       <% if user_signed_in? %>
       <% if current_user.id == @camp.user_id %>
         <%= link_to '編集', edit_camp_path(@camp.id), class: "show-edit" %>
+        <label>
+          <span>削除</span>
+          <input type="checkbox" name="checkbox">
+        <div id="popup"><p>本当に削除しますか？</p>
         <%= link_to '削除', camp_path(@camp.id), method: :delete, class:'show-destroy' %>
+        <%= link_to 'キャンセル', camp_path(@camp.id), class:'show-can' %>
+        </div>
+        </label>
       <% end %>
     <% end %>
   </div>
