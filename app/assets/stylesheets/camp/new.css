@@ -10,12 +10,13 @@
   background-size: cover;
   -webkit-filter: blur(5px);
   z-index: 0;
+  background-attachment: fixed;
 }
 
 .title-1 {
   font-size: 30px;
   margin-left: 20vw;
-  margin-top: 60px;
+  margin-top: 20px;
   color: goldenrod;
 }
 
@@ -34,7 +35,7 @@
 .img-upload {
   font-size: 16px;
   height: 50px;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-left: 46vw;
 }
 .form {
@@ -43,12 +44,24 @@
 }
 
 .input-text {
+  display: block;
   background-color: teal;
   border: 1px solid black;
   margin-top: 20px;
 }
 
 .submit-btn {
-  margin-left: 54vw;
-  font-size: 20px;
+  width: 50%;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.submit-btn2 {
+  width: 30%;
+  background: black;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 40px;
 }
