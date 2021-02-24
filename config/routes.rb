@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get 'explanations' => 'explanations#show'
   get 'recommended' => 'recommendeds#show'
   
-  resources :camps
+  resources :camps do
+    resources :profiles, only: :show
+  end
   resources :explanations, only: :show
   resources :recommendeds, only: :show
   resources :users, only: :show

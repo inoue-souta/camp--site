@@ -3,7 +3,7 @@
   <div class="show">
     <div class="show-who">
       <h1>投稿者</h1>
-      <%= link_to @camp.user.name, "#", class: "user-name" %>
+      <%= link_to @camp.user.name, camp_profile_path(@camp.id), class: "user-name" %>
     </div>
       <% if user_signed_in? %>
       <% if current_user.id == @camp.user_id %>
