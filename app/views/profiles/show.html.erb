@@ -1,0 +1,30 @@
+<div class="users-back"></div>
+<div class="users-show">
+  <h4 class="prof">プロフィール</h4>
+
+  <div class="user-user">
+    <h3 class="username-title">名前</h3>
+      <h3 class="user-name1"><%= @camp.user.name %></h3>
+  <h3 class="useremail-title">投稿一覧<h3>
+    <% @camps.each do |camp| %>
+    <% if camp.user.id == @camp.user.id %>
+      <div class='list'>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= camp.title %>
+          </h3>
+          <div class='item-category'>
+            <span><%= camp.category %></span>
+          </div>
+        </div>
+        <%= link_to camp_path(camp.id) do %>
+        <div class='item-img-content'>
+          <%= image_tag camp.image, class: "item-img" %>
+        </div>
+        
+        <% end %>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
