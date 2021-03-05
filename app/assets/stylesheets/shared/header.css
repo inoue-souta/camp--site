@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   /* background-color: darkgreen; */
-  background-image: url("banner-1557834_1920.jpg");
+  background-image: url("../banner-1557834_1920.jpg");
 }
 
 .search-bar-contents {
