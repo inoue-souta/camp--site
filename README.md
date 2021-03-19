@@ -122,6 +122,7 @@
 - belongs_to :user
 - has_many :comments
 
+# 実装予定
 ## comments テーブル
 
 | Column  | Type    | Options                       |
